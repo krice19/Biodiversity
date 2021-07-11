@@ -1,3 +1,11 @@
+# Adding files to ignore
+
+Practice/
+Practice2/
+PracticeChart/
+PracticeEvent/
+PracticeJSON/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

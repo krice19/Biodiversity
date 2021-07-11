@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Static/CSS/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 bg-light jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row"> 
+      <p style="border:2px; border-style:solid; border-color:black; text-align:center;"> This dashboard analyzes bacteria found in the navel area for each volunteer.  The bacteria discovered is presented in the various interactive charts. The bacteria analysis will be used to discover if it can be used in a synthetic beef supply.  Please use the dashboard to select a volunteer ID, which will show their corresponding demogrrpahic info and bacteria analysis.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar">
+        </div>
+        <p>Bar Chart displays the top 10 bacterial species for the selected volunteer ID </p>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+        <p> Gauge Chart displays how many times the individual washes their navel per week </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+        <p> Bubble Chart displays bacterial cultures per sample, with bubble size indicating sample value and bubble color indicating OTU ID </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="Static/JS/plots.js"></script>
+
+</body>
+
+</html>
