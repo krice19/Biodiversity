@@ -3,8 +3,8 @@
 # About the Project
 
 In this project, I analyze data on bacteria samples that have ability to synthesize into proteins.  The bacteria samples are taken from navels of volunteers.  My interactive dashboard bacterial sample data in JSON format and displays the data through three charts: A bar chart, bubble chart, and gauge chart.  The three charts display data specific to a volunteer ID, that is selected from a drop down menu.  The final visualization will allow the user to select the volunteer ID they are interested in viewing.  Once selected, the demographic info and three charts will adjust based on the ID.   
-<br/>
-**Chart Descriptions**
+
+### Chart Descriptions
 <br/>
 **Bar Chart**: Horizontal bar chart displays the top ten bacterial species found in the volunteer
 <br/>
